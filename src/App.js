@@ -28,10 +28,10 @@ function App() {
           categotyMatcher={categotyMatcher}
         ></Categories>
         <div className="section-center">
-          {menuData.map((menuItem) => 
+          {menuData.map((menuItem) => (
             // console.log(activeButton == menuItem.category);
-               (<Menu key={menuItem} data={menuItem}></Menu>)
-          )}
+            <Menu key={menuItem} data={menuItem}></Menu>
+          ))}
         </div>
       </section>
     </main>
